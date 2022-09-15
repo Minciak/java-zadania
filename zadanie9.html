@@ -1,0 +1,37 @@
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+			<style>
+			div{
+			color: green; 
+			font-size: 55px;
+			}
+			</style>
+			
+				<script>
+				var liczba1_now=prompt("podaj dowlny dzień  stycznia=","");
+				var liczba2_now=prompt("podaj inny dowlny dzień miesiąca stycznia=","");
+				var liczba3_now=prompt("podaj dowolną godzinę=","");
+				var liczba4_now=prompt("podaj inną dowolna godzinę=","");
+				var roznica_now;
+				var a_now=parseFloat(liczba1_now);
+				var b_now=parseFloat(liczba2_now);
+				if(a_now>b_now)
+				{
+				roznica_now=(a_now-b_now)*60*60*24;
+				}
+				else
+				{
+				roznica_now=(b_now-a_now)*60*60*24;
+				}
+				roznica_now-=(liczba3_now)*60*60;
+				roznica_now+=(liczba4_now)*60*60;
+				document.write("<div>ilość sekund = "+ roznica_now +"sekund<br>");
+				</script>
+	</head>
+	<body>
+
+	</body>
+</html>	
